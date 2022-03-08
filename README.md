@@ -27,3 +27,5 @@
 ## sql-skripte: Skripte für Beispiels-DB
 
 ## sql_uebung: Übungen + Lösungen zu SQL (Basis Transact-SQL)
+
+## prüfung_sample: Beispiel-Prüfung
