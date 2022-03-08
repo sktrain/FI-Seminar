@@ -1,6 +1,8 @@
 # FI-Seminar
 
-## Beispielprogramme (Eclipse- bzw. Maven-Projekte)
+## Aw_Java_folien: Folien zur Anwendungsentwicklung mit Java
+
+## Java_samples: Beispielprogramme (Eclipse- bzw. Maven-Projekte)
 
 * Muster_SE.zip &nbsp;&nbsp;&nbsp;&nbsp; Meine Standardbeispiele zur Java SE
 * Muster_Mitarbeiter.zip &nbsp;&nbsp;&nbsp;&nbsp; Programmbeispiele Mitarbeiterverwaltung
@@ -17,3 +19,11 @@
 * Local_JAXWS.zip &nbsp;&nbsp;&nbsp;&nbsp; Einfacher HelloWorld-Soap-Webservice mit den Bordmitteln der Java SE 8
 * LambdaMotivation &nbsp;&nbsp;&nbsp;&nbsp; Beispielcode zur Lambda-Schreibweise
 * Muster_Mitarbeiter_Maven_Tests.zip &nbsp;&nbsp;&nbsp;&nbsp; Mitarbeiterverwaltung als Maven-Projekt mit Junit-Tests
+
+## dbms_folien:  Folien zu Datenbanken
+
+## dbms_sonst_materialien: Sonstige Materialien/Infos zu Datenbanken
+
+## sql-skripte: Skripte für Beispiels-DB
+
+## sql_uebung: Übungen + Lösungen zu SQL (Basis Transact-SQL)
