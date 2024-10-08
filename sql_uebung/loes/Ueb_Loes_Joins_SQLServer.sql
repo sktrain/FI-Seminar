@@ -107,8 +107,8 @@ SELECT 	e.last_name  "Employee", e.job_id "Job",
 FROM	employees e   JOIN   departments d
 			ON	(e.department_id = d.department_id)
 		JOIN jobs j
-		    ON  (e.salary BETWEEN j.min_salary AND j.max_salary);
-		    
+		    ON  e.job_id = j.job_id AND (e.salary BETWEEN j.min_salary AND j.max_salary);
+
 		    
 -- 12. Zeigen Sie die Namen und das Einstellungsdatum aller Mitarbeiter an, 
 -- die nach dem Mitarbeiter Davies eingestellt wurden.
