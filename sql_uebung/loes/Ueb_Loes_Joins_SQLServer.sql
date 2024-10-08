@@ -1,4 +1,4 @@
--- Übung 4: Joins  -  Lösungen
+-- Ãœbung 4: Joins  -  LÃ¶sungen
 
 -- 1. Schreiben Sie eine Abfrage, um den Nachnamen, die Abteilungsnummer und 
 -- den Abteilungsnamen aller Mitarbeiter anzuzeigen.
@@ -26,7 +26,7 @@ FROM 	employees  e  JOIN   departments d
 WHERE	e.department_id = 80;
 
 
--- 4. Erweitern Sie die Aufgabe 3 so, dass zusätzlich der Name der Stadt für die Lokation angezeigt wird.
+-- 4. Erweitern Sie die Aufgabe 3 so, dass zusÃ¤tzlich der Name der Stadt fÃ¼r die Lokation angezeigt wird.
 
 SELECT DISTINCT e.job_id,  d.location_id, l.city
 FROM 	employees  e  JOIN   departments d
@@ -37,7 +37,7 @@ WHERE	e.department_id = 80;
 
 
 -- 5. Zeigen Sie den Nachnamen, die Jobkennung, die Abteilungsnummer und den Abteilungsnamen 
--- für alle Mitarbeiter an, die in Toronto arbeiten.
+-- fÃ¼r alle Mitarbeiter an, die in Toronto arbeiten.
 
 SELECT e.last_name, e.job_id, e.department_id, d.department_name
 FROM 	employees e   JOIN    departments d
@@ -65,9 +65,9 @@ FROM 	employees e     JOIN 	departments d
 		ON   d.manager_id = e.employee_id ;
 
 
--- 8. Zeigen sie den Nachnamen und die Mitarbeiternummer sowie den zugehörigen Manager 
+-- 8. Zeigen sie den Nachnamen und die Mitarbeiternummer sowie den zugehÃ¶rigen Manager 
 -- mit seiner Mitarbeiternummer und seinem Nachnamen an. 
--- Nennen Sie die Spalten "Employee", "EMP#", "Manager Name"“ und "MGR#".
+-- Nennen Sie die Spalten "Employee", "EMP#", "Manager Name"â€œ und "MGR#".
 
 SELECT 	w.last_name "Employee", w.employee_id   "EMP#", 
 			m.last_name "Manager Name",  m.employee_id  "MGR#"
@@ -85,15 +85,15 @@ SELECT 	w.last_name "Employee", w.employee_id   "EMP#",
 			
 
  
--- 10. Schreiben Sie eine Abfrage, die für den Mitarbeiter Zlotkey den Nachnamen, die Abteilungsnummer 
+-- 10. Schreiben Sie eine Abfrage, die fÃ¼r den Mitarbeiter Zlotkey den Nachnamen, die Abteilungsnummer 
 -- und die Nachnamen aller Kollegen ausgibt, die in der gleichen Abteilung arbeiten. 
--- Geben Sie den Spalten passende Überschriften.
+-- Geben Sie den Spalten passende Ãœberschriften.
 
 SELECT 	e.department_id  "department", e.last_name   "employee", 
 			c.last_name  "colleague"
 FROM	employees e   JOIN   employees c
-			ON	(e.department_id = c.department_id)
-WHERE	e.employee_id <> c.employee_id
+			ON	(e.department_id = c.department_id) 
+WHERE	e.employee_id <> c.employee_id AND e.last_name = 'Zlotkey' 
 ORDER BY	e.department_id, e.last_name, c.last_name;
 
 
