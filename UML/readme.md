@@ -7,6 +7,6 @@
 - ### [UML-Aktivitätsdiagramm – Ein umfassender Leitfaden](https://www.cybermedian.com/de/uml-activity-diagram-a-comprehensive-guide/)   
 
 - ### [Erläuterung zu Sequenz-Diagrammen von Hannes Stein](https://oer-informatik.de/uml-sequenzdiagramm)
-  hier gibt es auch Übungen samt Lösung dazu + weitere Infos zu anderen Themen
+      hier gibt es auch Übungen samt Lösung dazu + weitere Infos zu anderen Themen
 
 
